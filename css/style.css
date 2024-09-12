@@ -1,11 +1,33 @@
 
 body {
-    background-color: #e8e8e8; /*Use gradient*/
+    background-color: hsl(0, 0%, 91%); /*Use gradient hsl(156, 13%, 15%) */
     font-family: 'Markazi Text', serif;
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
+
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header header header"
+                          "nav nav nav"
+                          "main main main"
+                          "footer footer footer";
+}
+
+header {
+    grid-area: header;
+
+}
+
+main {
+    grid-area: main;
+    margin: 20px;
+}
+
+footer {
+    grid-area: footer;
+    margin: 20px;
 }
 
 h1 {
@@ -23,7 +45,13 @@ header > img {
 }
 
 nav {
+    grid-area: nav;
     padding: 0px;
+    margin: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul {
@@ -37,12 +65,39 @@ nav ul {
     justify-content: center;
 
     padding: 0px;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+@media (max-width: 400px) {
+    nav > ul {
+        width: 70%;
+    }
+    nav > ul > li {
+        flex: 1 50%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    nav > ul > li {
+        flex: 1 1 40%;
+    }
 }
 
 nav li {
     display: inline-block;
     
-    width: 25%;
+    width: 20vw;
+    
+    background-color:  #495e57;
+    color: whitesmoke;
+    padding: 2px;
+    border-radius: 20px;
+    height: 30px;
+
+    text-align: center;
+    padding-top: 10px;
 }
 
 section {
@@ -58,13 +113,11 @@ article {
     margin-left: auto;
     margin-right: auto;
 
-    border: 2px solid grey;
     padding: 20px;
     text-align: center;
 }
 
 nav {
-    border: 2px solid grey;
     margin-top: 20px;
 }
 
@@ -72,11 +125,6 @@ main {
     border: 2px solid grey;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 20px;
-}
-
-footer {
-    border: 2px solid grey;
     padding: 20px;
 }
 
@@ -102,14 +150,34 @@ footer {
     align-items: center;
 
     justify-content: center;
+    flex-direction: column;
     gap: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px;
 }
 
 footer > div {
-    border: 2px solid grey;
     width: 100%;
 }
 
+.logoMini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.footerText {
+    color: hsl(156, 13%, 15%);
+}
 
 section > article {
     border: 2px solid grey;
