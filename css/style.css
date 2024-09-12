@@ -22,14 +22,27 @@ header > img {
     margin-right: auto;
 }
 
+nav {
+    padding: 0px;
+}
+
 nav ul {
     list-style: none;
     text-align: center;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    justify-content: center;
+
+    padding: 0px;
 }
 
 nav li {
     display: inline-block;
     
+    width: 25%;
 }
 
 section {
@@ -40,3 +53,64 @@ article {
     flex: 1;
 }
 
+.logo {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 2px solid grey;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    border: 2px solid grey;
+    margin-top: 20px;
+}
+
+main {
+    border: 2px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+footer {
+    border: 2px solid grey;
+    padding: 20px;
+}
+
+.promotion, .items {
+    border: 2px solid grey;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    gap: 10px;
+}
+
+footer > div {
+    border: 2px solid grey;
+    width: 100%;
+}
+
+
+section > article {
+    border: 2px solid grey;
+}
