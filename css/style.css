@@ -70,6 +70,22 @@ nav ul {
     flex-wrap: wrap;
 }
 
+nav li {
+    display: inline-block;
+    
+    width: 18vw;
+    
+    background-color:  #495e57;
+    color: whitesmoke;
+    border-radius: 20px;
+    height: 35px;
+
+    padding: 5px;
+
+    text-align: center;
+}
+
+
 @media (max-width: 400px) {
     nav > ul {
         width: 70%;
@@ -83,21 +99,6 @@ nav ul {
     nav > ul > li {
         flex: 1 1 40%;
     }
-}
-
-nav li {
-    display: inline-block;
-    
-    width: 20vw;
-    
-    background-color:  #495e57;
-    color: whitesmoke;
-    padding: 2px;
-    border-radius: 20px;
-    height: 30px;
-
-    text-align: center;
-    padding-top: 10px;
 }
 
 section {
@@ -143,6 +144,28 @@ main {
     justify-content: center;
 
     margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    gap: 5px;
+
+    flex-wrap: wrap;
+    
+}
+
+section > article {
+    width: 25vw;
+}
+
+@media (max-width: 768px) {
+    section > article {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1055px) {
+    section > article {
+        width: 25vw;
+    }
 }
 
 
