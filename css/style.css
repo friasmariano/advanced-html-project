@@ -52,6 +52,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    margin-top: 20px;
 }
 
 nav ul {
@@ -83,6 +85,13 @@ nav li {
     padding: 5px;
 
     text-align: center;
+
+    cursor: pointer;
+}
+
+.navButton:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 
@@ -122,10 +131,6 @@ article {
 
     padding: 20px;
     text-align: center;
-}
-
-nav {
-    margin-top: 20px;
 }
 
 main {
@@ -168,8 +173,6 @@ section > article {
     }
 }
 
-
-
 footer {
     display: flex;
     align-items: center;
@@ -201,7 +204,7 @@ footer > div {
 }
 
 .footerText {
-    color: hsl(156, 13%, 15%);
+    color: #212b27;
 }
 
 .promotionImage {
@@ -209,4 +212,23 @@ footer > div {
     height: auto;
 
     border-radius: 15px;
+}
+
+.card {
+    width: 20rem;
+
+    padding-bottom: 20px;
+}
+
+.orderButton {
+    background-color: #086c6c;
+    color: whitesmoke;
+
+    border: none;
+
+    min-width: 85px;
+    min-height: 30px;
+
+    border-radius: 15px;
+    
 }
