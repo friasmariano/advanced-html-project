@@ -23,6 +23,9 @@ header {
 main {
     grid-area: main;
     margin: 20px;
+
+    justify-content: center; 
+    align-items: center;
 }
 
 footer {
@@ -120,16 +123,6 @@ section {
     align-items: center;
 }
 
-.info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding-top: 30px;
-
-    gap: 10px;
-}
-
 .logo {
     width: 40%;
     margin-left: auto;
@@ -156,6 +149,17 @@ main {
     border-radius: 15px;
 
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .promotionImage {
+        width: 100%;
+    }
+
+    .promotion, .promotionImage {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 footer {
@@ -214,5 +218,230 @@ footer > div {
     min-height: 30px;
 
     border-radius: 15px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+
+    gap: 20px;
+}
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+
+    border-radius: 20px;
+}
+
+.cardImageContainer {
+    width: 170px; 
+    height: 200px; 
+    border-radius: 20px 0px 0px 20px;
+}
+
+.cardImage {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 20px 0px 0px 20px;
+}
+
+.cardTextbox {
+    width: 220px; 
+    height: 200px; 
+    background-color: white; 
+    padding: 10px; 
+    border-radius: 0px 20px 20px 0px;
+
+    justify-content: left;
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:rgb(59, 59, 59);
+
+    padding: 0;
+    margin: 0;
+}
+
+.cardText {
+    font-size: 0.9rem;
+
+    padding-right: 10px;
+    padding-top: 3px;
+    margin: 0;
+    text-align: justify;
+}
+
+.myButton {
+    border: none;
+
+    width: 120px;
+    height: 30px;
+
+    background-color: #128a7c;
+    background: linear-gradient(180deg, #128a7c, #0b685d);
+    color: white;
+
+    border-radius: 22px;
+
+    margin-top: 10px;
+
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .myButton {
+        width: 100px;
+        height: 25px;
+
+        margin-top: 4px;
+        font-size: 0.8rem;
+    }
+
+    .cardImageContainer, .info {
+        flex-wrap: wrap;
+    }
     
+    .cardTitle {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color:rgb(59, 59, 59);
+    
+        padding: 0;
+        margin: 0;
+    }
+    
+    .cardText {
+        font-size: 0.7rem;
+    
+        padding-right: 10px; 
+        padding-top: 3px;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .cardImageContainer {
+        width: 100px; 
+        height: 170px; 
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .cardTextbox {
+        width: 170px; 
+        height: 170px; 
+        background-color: white; 
+        padding: 10px; 
+        border-radius: 0px 20px 20px 0px;
+    
+        justify-content: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .cardImageContainer, .info {
+        flex-wrap: wrap;
+    }
+
+    .myButton {
+        width: 100px;
+        height: 25px;
+
+        margin-top: 6px;
+        font-size: 0.9rem;
+    }
+
+
+    .cardTitle {
+        font-size: 1rem;
+        font-weight: 500;
+        color:rgb(59, 59, 59);
+    
+        padding: 0;
+        margin: 0;
+    }
+    
+    .cardText {
+        font-size: 0.9rem;
+    
+        padding-right: 10px; 
+        padding-top: 3px;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .cardImageContainer {
+        width: 250px; 
+        height: 170px; 
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .cardTextbox {
+        width: 290px; 
+        height: 170px; 
+        background-color: white; 
+        padding: 10px; 
+        border-radius: 0px 20px 20px 0px;
+    
+        justify-content: left;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+    .cardImageContainer, .info {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    .myButton {
+        width: 100px;
+        height: 25px;
+
+        margin-top: 6px;
+        font-size: 0.9rem;
+    }
+
+
+    .cardTitle {
+        font-size: 1rem;
+        font-weight: 500;
+        color:rgb(59, 59, 59);
+    
+        padding: 0;
+        margin: 0;
+    }
+    
+    .cardText {
+        font-size: 0.9rem;
+    
+        padding-right: 10px; 
+        padding-top: 3px;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .cardImageContainer {
+        width: 250px; 
+        height: 170px; 
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .cardTextbox {
+        width: 290px; 
+        height: 170px; 
+        background-color: white; 
+        padding: 10px; 
+        border-radius: 0px 20px 20px 0px;
+    
+        justify-content: left;
+    }
 }
