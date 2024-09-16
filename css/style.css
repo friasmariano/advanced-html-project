@@ -115,16 +115,19 @@ nav li {
 
 section {
     display: flex;
+
+    justify-content: center;
+    align-items: center;
 }
 
-article {
+.info {
     display: flex;
-
-    flex: 1;
     justify-content: center;
-
-    align-content: center;
     align-items: center;
+
+    padding-top: 30px;
+
+    gap: 10px;
 }
 
 .logo {
@@ -146,34 +149,13 @@ main {
     text-align: center;
 }
 
-.items {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.promotionImage {
+    width: 80vw; 
+    height: auto;
 
-    margin-top: 40px;
-    margin-right: 10px;
-    margin-left: 10px;
-    gap: 5px;
+    border-radius: 15px;
 
-    flex-wrap: wrap;
-    
-}
-
-section > article {
-    width: 25vw;
-}
-
-@media (max-width: 768px) {
-    section > article {
-        width: 90vw;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1055px) {
-    section > article {
-        width: 25vw;
-    }
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 footer {
@@ -212,15 +194,6 @@ footer > div {
     border-bottom: 1px solid #212b27;
 
     width: 300px;
-}
-
-.promotionImage {
-    width: 90vw; 
-    height: auto;
-
-    border-radius: 15px;
-
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card {
