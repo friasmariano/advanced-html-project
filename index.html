@@ -21,10 +21,10 @@
         </header>
         <nav>
             <ul>
-                <li><a class="navButton" href="index.html">Homepage</a></li>
-                <li><a class="navButton" href="products.html">Products</a></li>
-                <li><a class="navButton" href="contact.html">Contact</a></li>
-                <li><a class="navButton" href="info.html">Info</a></li>
+                <li data-ref="index.html"><a class="navButton" href="index.html">Homepage</a>
+                <li data-ref="products.html"><a class="navButton" href="products.html">Products</a></li>
+                <li data-ref="contact.html"><a class="navButton" href="contact.html">Contact</a></li>
+                <li data-ref="info.html"><a class="navButton" href="info.html">Info</a></li>
             </ul>
         </nav>
         <main>
@@ -83,5 +83,13 @@
             </div>
             <div class="footerText">© 2024 <br> Little Lemon</div>
         </footer>
+
+        <script>
+            document.querySelectorAll('nav ul li').forEach(item => {
+                item.addEventListener('click', function() {
+                    window.location.href = this.getAttribute('data-ref');
+                });
+            });
+        </script>
     </body>
 </html>
