@@ -13,6 +13,8 @@ body {
                           "nav nav nav"
                           "main main main"
                           "footer footer footer";
+
+    min-height: 100vh;
 }
 
 header {
@@ -242,7 +244,7 @@ footer > div {
 
 .cardImageContainer {
     width: 170px; 
-    height: 200px; 
+    height: 220px; 
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -255,7 +257,7 @@ footer > div {
 
 .cardTextbox {
     width: 220px; 
-    height: 200px; 
+    height: 220px; 
     background-color: white; 
     padding: 10px; 
     border-radius: 0px 20px 20px 0px;
