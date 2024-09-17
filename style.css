@@ -29,6 +29,10 @@ main {
     align-items: center;
 
     min-height: 550px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
 }
 
 footer {
@@ -144,12 +148,6 @@ section {
     padding-bottom: 0px;
 
     text-align: center;
-}
-
-main {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 20px;
 }
 
 .promotion, .items {
@@ -491,7 +489,7 @@ footer > div {
 }
 
 .contactSection {
-    margin-top: 10px;
+    margin-top: 20px;
 
     display: flex;
     flex-wrap: wrap;
