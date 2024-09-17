@@ -19,7 +19,6 @@ body {
 
 header {
     grid-area: header;
-
 }
 
 main {
@@ -28,6 +27,8 @@ main {
 
     justify-content: center; 
     align-items: center;
+
+    min-height: 550px;
 }
 
 footer {
@@ -52,7 +53,7 @@ header > img {
 nav {
     grid-area: nav;
     padding: 0px;
-    margin: 20px;
+    /* margin: 20px; */
 
     display: flex;
     align-items: center;
@@ -97,9 +98,14 @@ nav li {
     cursor: pointer;
 }
 
-.navButton:hover {
+.navButton {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav li:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 
@@ -126,11 +132,17 @@ section {
 }
 
 .logo {
-    width: 40%;
+    width: 300px;
+    height: auto;
+
     margin-left: auto;
     margin-right: auto;
 
-    padding: 20px;
+    margin-bottom: 10px;
+
+    padding-top: 25px;
+    padding-bottom: 0px;
+
     text-align: center;
 }
 
@@ -151,7 +163,17 @@ main {
     border-radius: 15px;
 
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+
+    cursor: pointer;
 }
+
+.promotionImage:hover {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.7);
+
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
 
 @media (min-width: 320px) and (max-width: 768px) {
     .promotionImage {
@@ -240,7 +262,15 @@ footer > div {
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
 
     border-radius: 20px;
+
+    cursor: pointer;
 }
+
+.cardContainer:hover {
+    transform: scale(1.2);
+    transition: transform 0.35s ease-out;
+}
+
 
 .cardImageContainer {
     width: 170px; 
@@ -446,4 +476,47 @@ footer > div {
     
         justify-content: left;
     }
+}
+
+.descriptionText {
+    text-align: justify;
+
+    font-size: 1.2rem;
+
+    font-weight: 450;
+
+    margin-bottom: 20px;
+
+    color: hsl(160, 14%, 20%);
+}
+
+.contactSection {
+    margin-top: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    gap: 0px;
+}
+
+.contactInfo {
+    padding: 6px 15px 0px 15px;
+
+    margin-bottom: 8px;
+
+    background-color: #aee2d1;
+    color: hsl(160, 14%, 23%);
+
+    border: 0.5px solid hsl(160, 14%, 45%);
+
+    font-size: 1.07rem;
+
+    min-width: 200px;
+    height: 40px;
+
+    text-align: center;
+    justify-content: center;
+
+    border-radius: 20px;
 }
