@@ -265,7 +265,7 @@ footer > div {
 }
 
 .cardContainer:hover {
-    transform: scale(1.2);
+    transform: scale(1.04);
     transition: transform 0.35s ease-out;
 }
 
